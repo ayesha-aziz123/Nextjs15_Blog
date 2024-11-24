@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@media (max-width:500px){
+    code{
+    font-size: 13px;
+}
+}
+
+.pre-scrollable {
+    overflow-x: auto;
+    white-space: pre; 
+  }
+  .content{
+    font-family: "Source Serif 4";
+  }

@@ -2,16 +2,15 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen w-full mx-auto lg:w-2/3 text-center">
-      <div className="flex justify-center items-center flex-col w-full">
-        <h1 className="font-bold text-[30px] py-8 px-2 text-center">
-          Discovering Next.js 15 RC: New Features and Difficulties
-          <hr className="h-[2px] bg-black my-3 w-[70%] mx-auto" />
+    <div className="min-h-screen  mx-auto max-w-[650px]  ">
+      <div className="flex justify-center items-center flex-col w-full md:px-3 px-5">
+        <h1 className="font-[800] md:text-[34px] text-[20px] py-8 lg:px-2  text-center">
+          Discovering Next.js 15 RC <br /> New Features and Difficulties
         </h1>
-        <div className="text-center">
+        <div className="">
           <Image
-            className="lg:w-[50vw] lg:h-[20vw] w-[70vw] h-[40vw]"
-            src={"/nextjs15.png"}
+            className="object-cover"
+            src={"/nextjs15.jpg"}
             width={9000}
             height={9000}
             alt={"Nextjs_Image"}
@@ -19,7 +18,7 @@ const Hero = () => {
         </div>
 
         {/* Para */}
-        <div className="py-5 text-[17px] lg:px-9 px-5">
+        <div className="py-5 text-[17px] ">
           <p className="">
             In this blog, we will explore the Next.js 15 RC to test the latest
             features for the upcoming stable release of Next.js. The first
@@ -36,9 +35,7 @@ const Hero = () => {
             them in your projects.
           </p>
 
-          <h1 className="font-bold text-[30px] py-3 text-center">
-            What is Next.js?
-          </h1>
+          <h1 className="font-bold text-[30px] py-3 ">What is Next.js?</h1>
           <p>
             Next.js, developed by Vercel, is an open-source React framework that
             provides powerful tools for creating fast, SEO-friendly web
@@ -49,34 +46,30 @@ const Hero = () => {
             builds, and API routes enhance both user and developer experiences.
           </p>
           <br />
-          <h1 className="font-bold text-center text-2xl">
+          <h1 className="font-bold  text-2xl">
             Upgrade to the latest Next.js version?
           </h1>
           <p>
             To upgrade to the latest version of Next.js (version 15 RC), use the
             following command with your preferred package manager:
           </p>
-          <h2 className="font-bold text-blue-700 text-center py-4 text-2xl">
-            NPM
-          </h2>
+          <h2 className="font-bold text-[#254681]  py-4 text-2xl">NPM</h2>
 
-          <div className="flex justify-center rounded-md w-full bg-black text-green-300">
-            <code className="inline-block   px-0 py-2 lg:px-5 lg:py-3">
+          <div className="flex justify-center rounded-md w-full border-[1px] border-gray-400 bg-gray-100 ">
+            <code className=" px-3 py-2 lg:px-5 lg:py-8 lg:text-[17px] text-[12px] ">
               npm i next@rc react@rc react-dom@rc eslint-config-next@rc
             </code>
           </div>
           <br />
-          <h2 className=" font-bold text-blue-700 text-center py-4 text-2xl">
-            Yarn
-          </h2>
-          <div className="flex justify-center w-full bg-black text-green-300 rounded-md ">
-            <code className=" inline-block  px-0 py-2 lg:px-5 lg:py-3">
+          <h2 className=" font-bold text-[#254681]  py-4 text-2xl">Yarn</h2>
+          <div className="flex justify-center w-full border-[1px] border-gray-400 bg-gray-100 rounded-md ">
+            <code className=" px-3 py-2 lg:px-5 lg:py-8  lg:text-[17px] text-[12px] ">
               yarn add next@rc react@rc react-dom@rc eslint-config-next@rc
             </code>
           </div>
 
           <div>
-            <h1 className="font-bold text-[30px] py-3 text-center">
+            <h1 className="font-bold text-[30px] py-3 ">
               Stable Improvements.
             </h1>
             <p>
@@ -84,7 +77,7 @@ const Hero = () => {
               streamlining development and production.
             </p>
 
-            <h1 className="font-bold text-[25px] py-3 text-[#254681] text-center">
+            <h1 className="font-bold text-[25px] py-3 text-[#254681] ">
               1. Support for React 19 RC
             </h1>
             <p>
@@ -103,7 +96,7 @@ const Hero = () => {
               including Actions. For more information, please refer to the React
               19 upgrade guide.
             </p>
-            <h1 className="font-bold text-[30px] py-3 text-[#254681] text-center ">
+            <h1 className="font-bold text-[24px] lg:text-[30px] py-3 text-[#254681]  ">
               React Compiler
             </h1>
             <p>
@@ -113,13 +106,12 @@ const Hero = () => {
               useCallback.
             </p>
 
-            <span className="font-bold ">Upgrade to React 19 RC</span>
-            <h4 className="font-bold text-[#254681]">
-              To upgrade your project:
+            <h4 className="font-bold text-[#000000] text-[23px] py-3">
+              Upgrade to React 19 RC To upgrade your project:
             </h4>
             <br />
-            <div className="w-full  bg-black text-green-500 px-3 py-2 lg:px-6 lg:py-3 rounded-md">
-              <code className="   ">
+            <div className="w-full  border-[1px] border-gray-400 bg-gray-100 px-3 py-2 lg:px-6 lg:py-3 rounded-md">
+              <code className=" px-3 py-2 lg:px-5 lg:py-8   lg:text-[17px] text-[12px] ">
                 npm install babel-plugin-react-compiler
               </code>
             </div>
@@ -130,8 +122,8 @@ const Hero = () => {
               file.
             </p>
             <br />
-            <div className="w-full rounded-md bg-black text-green-500">
-              <code className="inline-block text-lg md:text-sm ">
+            <div className="w-full rounded-md border-[1px] border-gray-400 bg-gray-100">
+              <code className="px-3 py-2 lg:px-5 lg:py-8 ">
                 <pre className=" px-2  lg:px-12 lg:py-3 ">
                   {`const nextConfig = {
   experimental: {
@@ -152,7 +144,7 @@ module.exports = nextConfig;`}
           </div>
 
           <div>
-            <h1 className="font-bold text-[30px] py-3 text-[#254681] text-center ">
+            <h1 className="font-bold text-[24px] lg:text-[30px] py-3 text-[#254681]  ">
               2. Hydration Error Enhancements
             </h1>
             <p>
@@ -177,7 +169,7 @@ module.exports = nextConfig;`}
           </div>
 
           <div>
-            <h1 className="font-bold text-[30px] py-3 text-[#254681] text-center ">
+            <h1 className="font-bold text-[24px] lg:text-[30px] py-3 text-[#254681]  ">
               3. Caching Updates
             </h1>
             <p>
@@ -200,7 +192,7 @@ module.exports = nextConfig;`}
             <li>Developers can opt-in to caching for specific scenarios.</li>
             <br />
 
-            <code className="inline-block bg-black text-green-500  py-2 lg:px-5 lg:py-3 w-full">
+            <code className="inline-block border-[1px] border-gray-400 bg-gray-100  px-3 py-2 lg:px-5 lg:py-8 w-full">
               const nextConfig = &#123;
               <br />
               &nbsp;&nbsp;experimental: &#123;
@@ -216,7 +208,7 @@ module.exports = nextConfig;`}
           </div>
 
           <div>
-            <h1 className="font-bold text-[30px] py-3 text-[#254681] text-center">
+            <h1 className="font-bold text-[24px] lg:text-[30px] py-3 text-[#254681] ">
               Create-next-app enhancement
             </h1>
             <p>
@@ -237,14 +229,14 @@ module.exports = nextConfig;`}
               new prompt asks whether you would like to enable Turbopack for
               local development. The default setting is No.
             </p>
-            <code className="inline-block bg-black text-green-500  py-2 lg:px-5 lg:py-3 w-full">
+            <code className="inline-block border-[1px] border-gray-400 bg-gray-100 px-3 py-2 lg:px-5 lg:py-8 w-full">
               ✔ Would you like to use Turbopack for next dev? … No / Yes
             </code>
             <br />
             <br />
             <p>The -turbo flag can be used to activate Turbopack.</p>
             <br />
-            <code className="inline-block bg-black text-green-500  py-2 lg:px-5 lg:py-3 w-full">
+            <code className="inline-block border-[1px] border-gray-400 bg-gray-100 px-3 py-2 lg:px-5 lg:py-8 w-full">
               npx create-next-app@rc -turbo
             </code>
             <br />
@@ -256,13 +248,13 @@ module.exports = nextConfig;`}
               page.
             </p>
             <br />
-            <code className="inline-block bg-black text-green-500  py-2 lg:px-5 lg:py-3 w-full">
+            <code className="inline-block border-[1px] border-gray-400 bg-gray-100  px-3 py-2 lg:px-5 lg:py-8 w-full">
               npx create-next-app@rc -empty
             </code>
           </div>
 
           <div>
-            <h1 className="font-bold text-[30px] py-3 text-[#254681] text-center">
+            <h1 className="font-bold text-[24px] lg:text-[30px] py-3 text-[#254681] ">
               Improving the bundling of external libraries (stable)
             </h1>
             <p>
@@ -291,7 +283,7 @@ module.exports = nextConfig;`}
           </div>
 
           <div>
-            <h1 className="font-bold text-[30px] py-3 text-[#254681] text-center">
+            <h1 className="font-bold text-[24px] lg:text-[30px] py-3 text-[#254681] ">
               Response execution with next/after (experimental)
             </h1>
             <p>
@@ -320,7 +312,7 @@ module.exports = nextConfig;`}
               next.config.js.
             </p>
             <br />
-            <code className="inline-block bg-black text-green-500  py-2 lg:px-5 lg:py-3 w-full">
+            <code className="inline-block border-[1px] border-gray-400 bg-gray-100  px-3 py-2 lg:px-5 lg:py-8 w-full">
               const nextConfig = &#123;
               <br />
               &nbsp;&nbsp;experimental: &#123;
@@ -334,17 +326,19 @@ module.exports = nextConfig;`}
               module.exports = nextConfig;
             </code>
             <br />
+            <br />
             <p>
               Then, import the function in Server Components, Server Actions,
               Route Handlers, or Middleware.
             </p>
             <br />
-            <code className="inline-block bg-black text-green-500 rounded-md  py-2 lg:px-5 lg:py-3 w-full">
-              import &#123; unstable_after as after &#125; from &apos;next/server&apos;;
+            <code className="inline-block border-[1px] border-gray-400 bg-gray-100 rounded-md px-3 py-2 lg:px-5 lg:py-8 w-full">
+              import &#123; unstable_after as after &#125; from
+              &apos;next/server&apos;;
             </code>
             <br />
             <br />
-            <code className="inline-block bg-black text-green-500 rounded-md  py-2 lg:px-5 lg:py-3 w-full">
+            <code className="inline-block border-[1px] border-gray-400 bg-gray-100 rounded-md px-3 py-2 lg:px-5 lg:py-8 w-full">
               export default function Layout(&#123; children &#125;) &#123;
               <br />
               &nbsp;&nbsp;// Secondary task.
@@ -365,7 +359,7 @@ module.exports = nextConfig;`}
           </div>
 
           <div>
-            <h1 className="font-bold text-[30px] py-3 text-[#254681] text-center">
+            <h1 className="font-bold text-[24px] lg:text-[30px] py-3 text-[#254681] ">
               Partial Prerendering
             </h1>
             <p>
@@ -390,7 +384,7 @@ module.exports = nextConfig;`}
               Layouts and Pages. Refer to the following code example.
             </p>
             <br />
-            <code className="inline-block bg-black text-green-500  py-2 lg:px-5 lg:py-3 w-full">
+            <code className="inline-block border-[1px] border-gray-400 bg-gray-100 px-3 py-2 lg:px-5 lg:py-8  w-full">
               import &#123; Suspense &#125; from &apos;react&apos;
               <br />
               import &#123; StaticComponent, DynamicComponent &#125; from
@@ -429,7 +423,7 @@ module.exports = nextConfig;`}
               incremental in your next.config.js file.
             </p>
             <br />
-            <code className="inline-block bg-black text-green-500  py-2 lg:px-5 lg:py-3 w-full">
+            <code className="inline-block border-[1px] px-3 py-2 lg:px-5 lg:py-8  border-gray-400 bg-gray-100 w-full">
               const nextConfig = &#123;
               <br />
               &nbsp;&nbsp;experimental: &#123;

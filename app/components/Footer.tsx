@@ -24,7 +24,7 @@ const Footer = () => {
           <FaFacebook className="text-white hover:transition-all hover:duration-[0.3s] hover:ease hover:scale-110 hover:text-blue-600" />
         </Link>
       </div>
-      <div className="text-center text-white text-[14px]">
+      <div className="text-center text-white lg:text-[20px] text-[14px]">
         <p className="text-gray-300 pb-2">Nextjs Blog by Ayesha</p>
         <p>&#169; 2024 Ayesha Aziz | All Rights Reserved</p>
       </div>
